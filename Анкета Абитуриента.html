@@ -1,0 +1,69 @@
+<body>
+    <h1>Анкета абитуриента</h1>
+
+    <form>
+        <label for="fullname">Фамилия Имя:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Иванов Иван"><br><br>
+
+        
+        <label for="birthdate">Дата рождения:</label>
+        <input type="date" id="birthdate" name="birthdate"><br><br>
+
+        
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">Экзамен</th>
+                    <th>Балл</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>
+                        <input type="text" name="exam1_name" value="Математика" readonly>
+                    </td>
+                    <td>
+                        <input type="number" name="exam1_score" value="40" min="0" max="100">
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>
+                        <input type="text" name="exam2_name" value="Русский язык" readonly>
+                    </td>
+                    <td>
+                        <input type="number" name="exam2_score" value="40" min="0" max="100">
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>
+                        <input type="text" name="exam3_name" placeholder="Информатика">
+                    </td>
+                    <td>
+                        <input type="number" name="exam3_score" value="50" min="0" max="100">
+                    </td>
+                </tr>
+            </tbody>
+        </table><br>
+
+        
+        <p><strong>Образовательная программа:</strong></p>
+        <label>
+            <input type="checkbox" name="program" value="программная инженерия">
+            программная инженерия
+        </label><br>
+        <label>
+            <input type="checkbox" name="program" value="прикладная информатика">
+            прикладная информатика
+        </label><br>
+        <label>
+            <input type="checkbox" name="program" value="прикладная математика и информатика">
+            прикладная математика и информатика
+        </label><br><br>
+
+        
+        <input type="submit" value="Отправить">
+    </form>
+</body>

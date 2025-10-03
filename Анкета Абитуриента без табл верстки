@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Анкета абитуриента</h1>
+
+    <form>
+        <label for="fullname">Фамилия Имя:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Иванов Иван"><br><br>
+        
+        <label for="birthdate">Дата рождения:</label>
+        <input type="date" id="birthdate" name="birthdate"><br><br>
+        
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Экзамен</b> 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Балл</b></p>
+         
+        <p>1 <input type="text" name="exam1_name" value="Математика" readonly> <input type="number" name="exam1_score" value="40" min="0" max="100"><br>
+        2 <input type="text" name="exam2_name" value="Русский язык" readonly> <input type="number" name="exam2_score" value="40" min="0" max="100"><br>
+        3 <input type="text" name="exam3_name" placeholder="Информатика"> <input type="number" name="exam3_score" value="50" min="0" max="100"></p>
+
+        <p>Образовательная программа:</p>
+        <label>
+            <input type="checkbox" name="program" value="программная инженерия">
+            программная инженерия
+        </label><br>
+        <label>
+            <input type="checkbox" name="program" value="прикладная информатика">
+            прикладная информатика
+        </label><br>
+        <label>
+            <input type="checkbox" name="program" value="прикладная математика и информатика">
+            прикладная математика и информатика
+        </label><br><br>
+        
+        <input type="button" value="Отправить">
+    </form>
+</body>
+</html>

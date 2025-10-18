@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body bgcolor="#fdf6f0">    
+    <h2 align="center">Меню</h2>
+    <p align="center">
+        <a href="Glavn.html">Главная</a> |
+        <a href="Zolmos.html">Золотой мост</a> |
+        <a href="Raspisanie.html">Расписание экскурсий</a>
+    </p>
+    <hr>
+
+
+    <h1 align="center">Расписание экскурсий по Владивостоку</h1>
+
+    
+    <details>
+    <summary>График</summary>
+    <form>
+        <p>
+            <b>Значение по оси ОХ</b><br>
+            <label><input type="radio" name="graph">Свободно мест<br></label>
+            <label><input type="radio" name="graph">Цена за билет<br></label>
+        </p>
+        <p>
+            <b>Результат</b><br>
+            <label><input type="checkbox">Гид<br></label>
+            <label><input type="checkbox">Цена за билет<br></label>
+            <label><input type="checkbox">Время</label>
+        </p>
+        <input type="button" value="Построить">
+    </form>
+    <p>График</p>
+</details>
+<details>
+    <summary>Фильтр</summary>
+    <form>
+        <p><label>Название: <input type="text"></label></p>
+        <p><label>Гид: <input type="text"></label></p>
+        <p><label>Объект <input type="text"></label></p>
+        <p><label>Свободно мест от <input type="number"></label><label> до <input type="number"></label></p>
+        <p><label>Дата проведение с <input type="date"></label><label> по <input type="date"></label></p>
+        <p><input type="button" value="Найти"></p>
+    </form>
+</details>
+<details>
+    <summary>Сортировка</summary>
+    <form>
+        <p>
+            Первый уровень: 
+            <select>
+                <option>Нет</option>
+                <option>Объект</option>
+                <option>Свободно мест</option>
+                <option>Цена за билет</option>
+                <option>Гид</option>
+            </select>
+            по убыванию? <input type="checkbox">
+        </p>
+        <p>
+            Второй уровень:
+            <select>
+                <option>Нет</option>
+                <option>Объект</option>
+                <option>Свободно мест</option>
+                <option>Цена за билет</option>
+                <option>Гид</option>
+            </select>
+            по убыванию? <input type="checkbox">
+        <p>
+            Третий уровень:
+            <select>
+                <option>Нет</option>
+                <option>Объект</option>
+                <option>Свободно мест</option>
+                <option>Цена за билет</option>
+                <option>Гид</option>
+            </select>
+            по убыванию? <input type="checkbox">
+        </p>
+        <input type="button" value="Сортировать">
+    </form>
+</details>
+
+    <hr>
+
+    
+    <h2>Список экскурсий (пример данных)</h2>
+    <table border="1" width="100%">
+        <thead>
+            <tr>
+                <th>Дата</th>
+                <th>Время</th>
+                <th>Объект</th>
+                <th>Гид</th>
+                <th>Свободно мест</th>
+                <th>Цена за билет, руб</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>2025-04-01</td><td>10:00</td><td>Форт №7</td><td>Петров А.Н.</td><td>8</td><td>520</td></tr>
+            <tr><td>2025-04-02</td><td>11:00</td><td>Русский мост</td><td>Сидорова М.К.</td><td>12</td><td>480</td></tr>
+            <tr><td>2025-04-03</td><td>14:00</td><td>Океанариум</td><td>Иванов С.В.</td><td>5</td><td>560</td></tr>
+            <tr><td>2025-04-04</td><td>10:00</td><td>Форт №7</td><td>Петров А.Н.</td><td>10</td><td>430</td></tr>
+            <tr><td>2025-04-05</td><td>12:00</td><td>Центр города</td><td>Кузнецова Е.П.</td><td>15</td><td>500</td></tr>
+            <tr><td>2025-04-06</td><td>15:00</td><td>Морской вокзал</td><td>Смирнов Д.Л.</td><td>7</td><td>450</td></tr>
+            <tr><td>2025-04-07</td><td>10:00</td><td>Форт №7</td><td>Петров А.Н.</td><td>6</td><td>590</td></tr>
+            <tr><td>2025-04-08</td><td>11:00</td><td>Русский мост</td><td>Сидорова М.К.</td><td>9</td><td>470</td></tr>
+            <tr><td>2025-04-09</td><td>14:00</td><td>Океанариум</td><td>Иванов С.В.</td><td>11</td><td>530</td></tr>
+            <tr><td>2025-04-10</td><td>10:00</td><td>Форт №7</td><td>Петров А.Н.</td><td>13</td><td>410</td></tr>
+            <tr><td>2025-04-11</td><td>12:00</td><td>Центр города</td><td>Кузнецова Е.П.</td><td>4</td><td>580</td></tr>
+            <tr><td>2025-04-12</td><td>15:00</td><td>Морской вокзал</td><td>Смирнов Д.Л.</td><td>8</td><td>440</td></tr>
+            <tr><td>2025-04-13</td><td>10:00</td><td>Форт №7</td><td>Петров А.Н.</td><td>14</td><td>510</td></tr>
+            <tr><td>2025-04-14</td><td>11:00</td><td>Русский мост</td><td>Сидорова М.К.</td><td>10</td><td>490</td></tr>
+            <tr><td>2025-04-15</td><td>14:00</td><td>Океанариум</td><td>Иванов С.В.</td><td>6</td><td>570</td></tr>
+            <tr><td>2025-04-16</td><td>10:00</td><td>Форт №7</td><td>Петров А.Н.</td><td>9</td><td>460</td></tr>
+            <tr><td>2025-04-17</td><td>12:00</td><td>Центр города</td><td>Кузнецова Е.П.</td><td>12</td><td>540</td></tr>
+            <tr><td>2025-04-18</td><td>15:00</td><td>Морской вокзал</td><td>Смирнов Д.Л.</td><td>5</td><td>420</td></tr>
+            <tr><td>2025-04-19</td><td>10:00</td><td>Форт №7</td><td>Петров А.Н.</td><td>7</td><td>600</td></tr>
+            <tr><td>2025-04-20</td><td>11:00</td><td>Русский мост</td><td>Сидорова М.К.</td><td>13</td><td>480</td></tr>
+            <tr><td>2025-04-21</td><td>14:00</td><td>Океанариум</td><td>Иванов С.В.</td><td>10</td><td>550</td></tr>
+            <tr><td>2025-04-22</td><td>10:00</td><td>Форт №7</td><td>Петров А.Н.</td><td>8</td><td>430</td></tr>
+            <tr><td>2025-04-23</td><td>12:00</td><td>Центр города</td><td>Кузнецова Е.П.</td><td>11</td><td>520</td></tr>
+            <tr><td>2025-04-24</td><td>15:00</td><td>Морской вокзал</td><td>Смирнов Д.Л.</td><td>9</td><td>470</td></tr>
+            <tr><td>2025-04-25</td><td>10:00</td><td>Форт №7</td><td>Петров А.Н.</td><td>6</td><td>590</td></tr>
+            <tr><td>2025-04-26</td><td>11:00</td><td>Русский мост</td><td>Сидорова М.К.</td><td>14</td><td>450</td></tr>
+            <tr><td>2025-04-27</td><td>14:00</td><td>Океанариум</td><td>Иванов С.В.</td><td>7</td><td>510</td></tr>
+            <tr><td>2025-04-28</td><td>10:00</td><td>Форт №7</td><td>Петров А.Н.</td><td>12</td><td>490</td></tr>
+            <tr><td>2025-04-29</td><td>12:00</td><td>Центр города</td><td>Кузнецова Е.П.</td><td>5</td><td>560</td></tr>
+            <tr><td>2025-04-30</td><td>15:00</td><td>Морской вокзал</td><td>Смирнов Д.Л.</td><td>10</td><td>440</td></tr>
+            <tr><td>2025-05-01</td><td>10:00</td><td>Форт №7</td><td>Петров А.Н.</td><td>8</td><td>530</td></tr>
+            <tr><td>2025-05-02</td><td>11:00</td><td>Русский мост</td><td>Сидорова М.К.</td><td>12</td><td>460</td></tr>
+            <tr><td>2025-05-03</td><td>14:00</td><td>Океанариум</td><td>Иванов С.В.</td><td>5</td><td>600</td></tr>
+            <tr><td>2025-05-04</td><td>10:00</td><td>Форт №7</td><td>Петров А.Н.</td><td>10</td><td>420</td></tr>
+            <tr><td>2025-05-05</td><td>12:00</td><td>Центр города</td><td>Кузнецова Е.П.</td><td>15</td><td>500</td></tr>
+            <tr><td>2025-05-06</td><td>15:00</td><td>Морской вокзал</td><td>Смирнов Д.Л.</td><td>7</td><td>580</td></tr>
+            <tr><td>2025-05-07</td><td>10:00</td><td>Форт №7</td><td>Петров А.Н.</td><td>6</td><td>470</td></tr>
+            <tr><td>2025-05-08</td><td>11:00</td><td>Русский мост</td><td>Сидорова М.К.</td><td>9</td><td>540</td></tr>
+            <tr><td>2025-05-09</td><td>14:00</td><td>Океанариум</td><td>Иванов С.В.</td><td>11</td><td>430</td></tr>
+            <tr><td>2025-05-10</td><td>10:00</td><td>Форт №7</td><td>Петров А.Н.</td><td>13</td><td>570</td></tr>
+            <tr><td>2025-05-11</td><td>12:00</td><td>Центр города</td><td>Кузнецова Е.П.</td><td>4</td><td>410</td></tr>
+            <tr><td>2025-05-12</td><td>15:00</td><td>Морской вокзал</td><td>Смирнов Д.Л.</td><td>8</td><td>490</td></tr>
+            <tr><td>2025-05-13</td><td>10:00</td><td>Форт №7</td><td>Петров А.Н.</td><td>14</td><td>550</td></tr>
+            <tr><td>2025-05-14</td><td>11:00</td><td>Русский мост</td><td>Сидорова М.К.</td><td>10</td><td>480</td></tr>
+            <tr><td>2025-05-15</td><td>14:00</td><td>Океанариум</td><td>Иванов С.В.</td><td>6</td><td>520</td></tr>
+            <tr><td>2025-05-16</td><td>10:00</td><td>Форт №7</td><td>Петров А.Н.</td><td>9</td><td>460</td></tr>
+            <tr><td>2025-05-17</td><td>12:00</td><td>Центр города</td><td>Кузнецова Е.П.</td><td>12</td><td>590</td></tr>
+            <tr><td>2025-05-18</td><td>15:00</td><td>Морской вокзал</td><td>Смирнов Д.Л.</td><td>5</td><td>440</td></tr>
+            <tr><td>2025-05-19</td><td>10:00</td><td>Форт №7</td><td>Петров А.Н.</td><td>7</td><td>510</td></tr>
+            <tr><td>2025-05-20</td><td>11:00</td><td>Русский мост</td><td>Сидорова М.К.</td><td>13</td><td>470</td></tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    
+    <footer align="center">
+        <p>Выполнил: Иванов Л.А., группа Б9123-09.03.04</p>
+    </footer>
+
+</body>
+</html>

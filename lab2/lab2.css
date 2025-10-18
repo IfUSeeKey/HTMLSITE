@@ -1,0 +1,27 @@
+.body {
+    background-color: lightgreen; /* Это цвет заднего фона */
+    width: 90%; /* Ширина фона*/
+    margin: auto; /* Сдвигает зелёный фон в центр */ 
+}
+
+.body div {
+    margin: 5px; /* Отступ от внешних границ блоков*/
+}
+
+.stroka div {
+    
+    background-color: white; /* Цвет блока*/
+    height: 60px; /* Высота блока*/
+    display: inline-block; /* Блочно-строчный элемент*/
+    width: 300px; /* Ширина блока*/
+    vertical-align: middle; /* Чтобы элементы в строке были выравнены по центру*/
+}
+
+.stroka {
+    text-align: right; /* Блоки выравниваем по правой стороне*/
+}
+
+p {
+    margin: 5px; /* Отступ текста от границ блока*/
+    text-align: left; /* Текст выравниваем по левой стороне*/
+}

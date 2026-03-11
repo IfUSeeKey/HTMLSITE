@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Полигон Bootstrap</title>
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <link rel="stylesheet" href="css/mdb.min.css">
+      <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body class="container">
+
+        <header>
+            <!-- Панель навигации -->
+            <nav class="navbar navbar-expand-md bg-info navbar-dark" >
+                <!-- Заголовок -->
+                <a class="navbar-brand" href="#">Экскурсии с комфортом</a>  
+
+                    <!-- Кнопка для свернутого меню -->
+                <button 
+                    class="navbar-toggler bg-light" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#menu"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                    <!-- меню -->
+                <div class="collapse navbar-collapse" id="menu">
+
+                    <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Расписание экскурсий</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Контакты</a>
+                    </li>
+                    </ul>
+
+                    <!-- форма для поиска -->
+                    <form  class="d-flex">
+                        <input class="form-control" type="text" placeholder="Найти">
+                        <button class="btn btn-outline-success" type="submit">Найти</button>
+                    </form>
+                </div>
+                
+            </nav>
+        </header>
+
+
+        <!-- Галерея -->
+        <div class="row gy-2 mb-5">
+
+          <!-- Большая картинка слева -->
+          <div class="col-md-4 gallery-tall bg-image hover-zoom">
+            <img src="pictures/akvamir.png" class="gallery-img" alt="Аквамир">
+          </div>
+
+
+          <!-- Правая cnjhjyf -->
+          <div class="col-md-8">
+            <div class="row gy-2">
+                <!-- Широкая картинка сверху -->
+                <div class="col-12 gallery-wide bg-image hover-zoom">
+                    <img src="pictures/botan_sad.png" class="gallery-img" alt="Ботанический сад">
+                </div>
+                
+                <!-- Две маленькие картинки снизу -->
+                <div class="col-12 col-md-6 gallery-small bg-image hover-zoom">
+                    <img src="pictures/cesar_nab.png" class="gallery-img" alt="Набережная Цесаревича">
+                </div>
+
+                <div class="col-12 col-md-6 gallery-small bg-image hover-zoom">
+                    <img src="pictures/dom_baboch.png" class="gallery-img" alt="Дом бабочек">
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <main>
+          <!-- левая колонка | центр | правая колонка -->
+            <div class="row gy-2">
+            
+                <!-- ЛЕВАЯ КОЛОНКА -->
+                <div class="col-md-2">
+                    <div class="mb-3 text-center bg-image hover-zoom">
+                        <img src="pictures/istor_mus.png" class="img-fluid" alt="Исторический музей">
+                        <h5>Исторический музей</h5>
+                        <p>Подробнее <a href="#">...</a></p>
+                    </div>
+                        <div class="mb-3 text-center bg-image hover-zoom">
+                        <img src="pictures/korabel_nab.png" class="img-fluid" alt="Корабельная набережная">
+                        <h5>Корабельная набережная</h5>
+                        <p>Подробнее <a href="#">...</a></p>
+                    </div>
+                    <div class="mb-3 text-center bg-image hover-zoom">
+                        <img src="pictures/lyut_cerk.png" class="img-fluid" alt="Лютерианская церковь">
+                        <h5>Лютерианская церковь</h5>
+                        <p>Подробнее <a href="#">...</a></p>
+                    </div>
+                    <div class="mb-3 text-center bg-image hover-zoom">
+                        <img src="pictures/triumf_arka.png" class="img-fluid" alt="Триумфальная арка">
+                        <h5>Триумфальная арка</h5>
+                        <p>Подробнее <a href="#">...</a></p>
+                    </div>
+                </div>
+
+                <!-- ЦЕНТРАЛЬНАЯ КОЛОНКА -->
+                <div class="col-md-8">
+                    <!-- Три картинки сверху -->
+                    <div class="row gy-2 mb-3">
+                        <div class="col-12 col-md-4 text-center bg-image hover-zoom">
+                            <img src="pictures/mayak_koshka.png" class="img-fluid" alt="Маяк Токаревского">
+                            <h5>Маяк Токаревского</h5>
+                            <p>Подробнее <a href="#">...</a></p>
+                        </div>
+                        <div class="col-12 col-md-4 text-center bg-image hover-zoom">
+                            <img src="pictures/moto_mus.png" class="img-fluid" alt="Музей авто">
+                            <h5>Музей авто</h5>
+                            <p>Подробнее <a href="#">...</a></p>
+                        </div>
+                        <div class="col-12 col-md-4 text-center bg-image hover-zoom">
+                            <img src="pictures/pokr_sobor.png" class="img-fluid" alt="Покровский собор">
+                            <h5>Покровский собор</h5>
+                            <p>Подробнее <a href="#">...</a></p>
+                        </div>
+                    </div>
+
+                    <!-- Два блока с текстом -->
+                    <div class="row gy-3">
+                        <!-- Первый блок -->
+                        <div class="col-md-6 d-flex">
+                            <div>
+                                <div>
+                                    <h3 class="text-center">Золотой рог</h3>
+                                    <p class="txt-small ">Узкий и длинный залив — сердце столицы края. Именно на берегу этой бухты во второй половине XIX века и начал формироваться Владивосток.Золотой Рог длиной семь километров врезается в полуостров и делит столицу на две части. От причалов Золотого Рога отправляются катера на морскую прогулку, а с палубы катера удастся рассмотреть берега бухты и сфотографировать военные корабли.</p>
+                                    
+                                    <div class="text-center mb-3 bg-image hover-zoom">
+                                        <img src="pictures/zol_rog.png" class="img-fluid rounded" alt="...">
+                                        
+                                    </div>
+
+                                    <button type="button" class="btn btn-primary btn-sm mt-auto">Подробнее»</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Второй блок -->
+                        <div class="col-md-6 d-flex">
+                            <div class="row">
+                                <div class="col-md-6 my-auto">
+                                    <h3 class="text-center">Золотой мост</h3>    
+                                </div>
+
+                                <div class="col-md-6 my-auto">
+                                    <div>
+                                        <div class="text-center mb-3 bg-image hover-zoom">
+                                            <img src="pictures/zol_most.png" class="img-fluid rounded" alt="...">
+                                        </div>
+                                        <div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!--  -->
+                                <div class="mt-auto">
+                                    <p class="txt-small">Золотой мост — один из крупнейших вантовых мостов в мире и популярная достопримечательность Владивостока. Мощную конструкцию возвели в рекордно короткие сроки (всего за четыре года), а её открытие стало большим событием для жителей города. Раскрываем тайны строительства и ищем лучшие смотровые площадки для крутых фото со знаменитой конструкцией.</p>
+                                    <button type="button" class="btn btn-primary btn-sm">Подробнее»</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ПРАВАЯ КОЛОНКА -->
+                <div class="col-md-2">
+                    <div class="mb-3 text-center bg-image hover-zoom">
+                        <img src="pictures/russ_most.png" class="img-fluid" alt="Русский мост">
+                        <h5>Русский мост</h5>
+                        <p>Подробнее <a href="#">...</a></p>
+                    </div>
+
+                    <div class="mb-3 text-center bg-image hover-zoom">
+                        <img src="pictures/russ_ostr.png" class="img-fluid" alt="Русский остров">
+                        <h5>Русский остров</h5>
+                        <p>Подробнее <a href="#">...</a></p>
+                    </div>
+
+                    <div class="mb-3 text-center bg-image hover-zoom">
+                        <img src="pictures/svetlanskaya.png" class="img-fluid" alt="Улица Светланская">
+                        <h5>Улица Светланская</h5>
+                        <p>Подробнее <a href="#">...</a></p>
+                    </div>
+
+                    <div class="mb-3 text-center bg-image hover-zoom">
+                        <img src="pictures/tobizin.png" class="img-fluid" alt="Мыс Тобизина">
+                        <h5>Мыс Тобизина</h5>
+                        <p>Подробнее <a href="#">...</a></p>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <footer class="footer py-2 big-light">
+            <p>Б9123-09.03.04 (6) Иванов Леонид Алексеевич, 2026 год</p>
+        </footer>
+    </body>
+</html>

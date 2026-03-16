@@ -1,0 +1,12 @@
+extends template
+
+block nav
+    nav
+        +createMenu(dictMenu, descs[0].menuItem)
+        +createSearch()
+    
+block content
+    h2= descs[0].menuItem
+    img.big(src= require("../pictures/" + descs[0].pict))
+    p= descs[0].firstP
+    p= descs[0].secondP

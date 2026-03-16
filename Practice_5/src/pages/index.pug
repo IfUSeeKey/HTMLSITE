@@ -1,0 +1,38 @@
+extends template
+
+block nav
+    nav
+        +createMenu(dictMenu, 'Экскурсии по городу')
+        +createSearch()
+        
+block content
+    div.main
+        div.gallery
+            +createGallery(listImages)
+
+        div.body
+            div.left-content
+                +makeLeftRightContent(listLeftContent)
+
+            div.middle-content
+
+                div.big-card
+                    h3= listMiddleContent[0].header
+                    p.text-content= listMiddleContent[0].text1
+                    div.big-card__big-card-main--first
+                        div.image-container
+                            img(src= require("../pictures/" + listMiddleContent[0].image))
+                        div.button-container.button-right
+                            button(type="button") Подробнее»
+
+                div.big-card
+                    div.big-card__big-card-main--second
+                        div.image-container
+                            img(src= require("../pictures/" + listMiddleContent[1].image))
+                    h3= listMiddleContent[1].header
+                    p.text-content= listMiddleContent[1].text1
+                    div.button-container.button-left
+                        button(type="button") Подробнее»
+
+            div.right-content
+                +makeLeftRightContent(listRightContent)

@@ -1,0 +1,156 @@
+mixin createMenu(menu, active)
+    each value, key in menu
+        if active == key
+            a.active(href= value)= key
+        else
+            a(href= value)= key
+
+mixin createSearch
+    div.search-bar
+        input.search-bar__input(type="text" placeholder="Поиск по сайту")
+        button.search-bar__button(type="button") Найти
+
+mixin createGallery(images)
+    each pict in images
+        if pict == 'botan_sad.png'
+            div.gallery_item--big
+                a(href= "description.html")
+                    img(src= require("../pictures/" + pict))
+        else
+            if pict == 'akvamir.png'
+                div.gallery_item--wide
+                    img(src= require("../pictures/" + pict))
+            else
+                div.gallery_item--small
+                    img(src= require("../pictures/" + pict))
+
+mixin makeLeftRightContent(list)
+    each item in list
+        div.small-card
+            img(src= require("../pictures/" + item.image))
+            h3= item.header
+            p= item.text
+                a(href="#") &hellip;
+
+
+mixin makeMiddleTopContent(list)
+    each item in list 
+        div.small-card
+            img(src= require("../pictures/" + item.image))
+            h3= item.header
+            p= item.text
+                a(href="#") &hellip;
+
+mixin createGraph
+    details
+        summary График
+        form
+        p
+            b Значение по оси ОХ 
+            br
+            label
+                input(type="radio" name="graph")
+                | Объект
+                br
+            label
+                input(type="radio" name="graph")
+                | Гид
+                br
+        p
+            b Результат
+            br
+            label
+                input(type="checkbox")
+                | Минимальная цена за билет
+                br
+            label
+                input(type="checkbox")
+                | Максимальная цена за билет
+                br
+            label
+                input(type="checkbox")
+                | Количество экскурсий
+        input(type="button" value="Построить")
+        p Здесь будет график
+
+mixin createFilter
+    details
+        summary Фильтр
+        form
+            p
+                label
+                    | Объект: 
+                    input(type="text")
+            p
+                label
+                    | Гид: 
+                    input(type="text")
+            p
+                label
+                    | Свободно мест от 
+                    input(type="number")
+                label
+                    |  до 
+                    input(type="number")
+            p
+                label
+                    | Цена билета от 
+                    input(type="number")
+                label
+                    |  до 
+                    input(type="number")
+            p
+                label
+                    | Время проведения экскурсии с 
+                    input(type="time")
+                label
+                    |  по 
+                    input(type="time")
+            p
+                label
+                    | Дата проведения с 
+                    input(type="date")
+                label
+                    |  по 
+                    input(type="date")
+            p
+                input(type="button" value="Найти")
+
+mixin createSortSelect
+    select
+        option Нет
+        option Дата
+        option Время
+        option Объект
+        option Гид
+        option Свободно мест
+        option Цена за билет, руб
+    |  по убыванию? 
+    input(type="checkbox")
+
+//- mixin createTable(header, data)
+//-     table(border="1" cellspacing="0" cellpadding="3")
+//-         tr
+//-             each field in header
+//-                 th= field
+//-         each row in data
+//-             tr
+//-                 td= row.f1
+//-                 td= row.f2
+//-                 td= row.f3
+//-                 td= row.f4
+//-                 td= row.f5
+//-                 td= row.f6
+
+mixin createTable(header, data)
+    table.table(border="1" cellspacing="0" cellpadding="3")
+        thead.table__header
+            tr.table__row
+                each colonka in header 
+                    th.table__cell.table__cell--header= colonka
+        
+        tbody.table__body
+            each stroka in data
+                tr.table__row
+                    each value in Object.values(stroka)
+                        td.table__cell= value

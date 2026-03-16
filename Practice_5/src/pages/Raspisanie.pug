@@ -1,0 +1,28 @@
+extends template
+
+block nav
+    nav
+        +createMenu(dictMenu, 'Расписание экскурсий')
+        +createSearch()
+    
+block content
+    +createGraph
+
+    +createFilter
+
+    details
+        summary Сортировка
+        form
+            p
+                | Первый уровень: 
+                +createSortSelect
+            p 
+                | Второй уровень: 
+                +createSortSelect
+            p 
+                | Третий уровень: 
+                +createSortSelect
+            input(type="button" value="Сортировать")
+
+    br
+    +createTable(tableHeader, tableData)

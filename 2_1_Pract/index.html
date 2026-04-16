@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Фильтры и сортировка. Практическая работа</title>
+        <link rel="stylesheet" href="CSS/style.css">
+        <script src="JavaScript/data.js"></script>
+        <script src="JavaScript/table.js"></script>
+        <script src="JavaScript/filter.js"></script>
+        <script src="JavaScript/sort.js"></script>
+        <script src="JavaScript/main.js"></script>
+    </head>
+    <body>
+        <h2 align="center">Меню</h2>
+        <p align="center">
+            <a href="#">Главная</a> |
+            <a href="#">Золотой мост</a> |
+            <a href="#">Расписание экскурсий</a>
+        </p>
+        <hr>
+
+        <h1 align="center">Расписание экскурсий по Владивостоку на январь 2026 года</h1>
+
+        <form id="filter">
+            <p>
+                <label for="structure">Объект</label>
+                <input type="text" id="structure">
+            </p>
+
+            <p>
+                <label for="guide">Гид</label>
+                <input type="text" id="guide">
+            </p>
+
+            <p>
+                <label for="vacantFrom">Свободно мест: </label>
+                от <input type="number" id="vacantFrom">
+                до <input type="number" id="vacantTo">
+            </p>
+
+            <p>
+                <label for="priceFrom">Цена билета: </label>
+                от <input type="number" id="priceFrom">
+                до <input type="number" id="priceTo">
+            </p>
+
+            <p>
+                <label for="timeFrom">Время начало экскурсии (час): </label>
+                от <input type="number" id="timeFrom">
+                до <input type="number" id="timeTo"> часов
+            </p>
+
+            <p>
+                <label for="dayFrom">Число проведения: </label>
+                с <input type="number" id="dayFrom">
+                по <input type="number" id="dayTo"> число
+            </p>
+            <input id="findButton" type="button" value="Найти">
+            <input id="clearButton" type="button" value="Очистить фильтры">
+        </form>
+
+        <form id="sort">
+            <p> Сортировать по</p>
+            <p>
+                <select id="fieldsFirst">
+                </select>
+                по убыванию? <input  type="checkbox"  id="fieldsFirstDesc">
+            </p>
+            <p>
+                <select id="fieldsSecond">
+                </select>
+                по убыванию? <input  type="checkbox"  id="fieldsSecondDesc">
+            </p>
+            <p>
+                <select id="fieldsThird">
+                </select>
+                по убыванию? <input  type="checkbox"  id="fieldsThirdDesc">
+            </p>
+            <input id="sortButton" type="button" value="Сортировать">
+            <input id="resetSortButton" type="button" value="Сбросить сортировку">
+        </form>
+
+        <table id="list">
+        </table>
+        <hr>
+
+        <footer>
+            <p>Выполнил: Иванов Л.А., группа Б9123-09.03.04 (6)</p>
+        </footer>
+    </body>
+</html>

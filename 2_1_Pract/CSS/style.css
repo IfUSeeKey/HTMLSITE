@@ -1,0 +1,15 @@
+table {
+    margin: auto;
+    background-color: lightgray;
+    width: 100%;
+}
+
+th {
+    background-color: darkgray;
+    padding: 3px;
+}
+
+td {
+    background-color: rgb(231, 221, 221);
+    padding: 3px;
+}
